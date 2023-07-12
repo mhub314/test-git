@@ -21,22 +21,24 @@ max_num_in_list([5,10,12,6,22,13,46,1200])
 #Question 4
 def is_leap_year(a_year):
     #Write a function to return if the given year is a leap year.
+    if a_year % 400 == 0:
+        return True
+    if a_year % 4 == 0:
+        return True
+    if a_year % 100 == 0:
+        return False
+    else:
+        return False
 
-leap_year = input("Input a year, and I will tell you if it is a leap year ")
-leap_year = int(leap_year)
-
-if leap_year % 4 == 0:
-    print("That is a leap year!")
-
-elif leap_year % 400 == 0:
-    print("That is a leap year!")
-
-elif leap_year % 100 == 0:
-    print("That is NOT a leap year.")
-
-else:
-    print("That is NOT a leap year.")
+print(is_leap_year(1980))
+print(is_leap_year(2000))
+print(is_leap_year(2001))
 
 # Question 5
 def is_consecutive(a_list):
     #Check if numbers in a list are consecutive 
+    print(a_list == [2,3,4,5,6,7])
+    a_list == True
+
+is_consecutive([2,3,4,5,6,7])
+is_consecutive([1,2,4,5])

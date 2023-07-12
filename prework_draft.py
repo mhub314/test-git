@@ -1,14 +1,14 @@
-def sum_of_two_numbers(number_1, number_2):
-    return number_1 + number_2
-results = sum_of_two_numbers(7,8)
-print(results)
-
-def is_consecutive(a_list):
-    if a_list == [1,2,3,4,5]:
+#Question 4
+def is_leap_year(a_year):
+    if a_year % 400 == 0:
         return True
+    if a_year % 4 == 0:
+        return True
+    if a_year % 100 == 0:
+        return False
     else:
         return False
-    print(a_list)
 
-is_consecutive([1,2,3,4,5])
-is_consecutive([1,5,6])
+print(is_leap_year(1980))
+print(is_leap_year(2000))
+print(is_leap_year(2001))
